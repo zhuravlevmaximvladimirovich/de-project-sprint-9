@@ -5,6 +5,7 @@ from flask import Flask
 
 from app_config import AppConfig
 from cdm_loader.cdm_message_processor_job import CdmMessageProcessor
+from repository.cdm_repository import CdmRepository
 
 
 app = Flask(__name__)
@@ -21,7 +22,9 @@ if __name__ == '__main__':
     app.logger.setLevel(logging.DEBUG)
 
     proc = CdmMessageProcessor(
-        app.logger
+        consumer=config.kafka_consumer(),
+        cdm_repository=CdmRepository(config.pg_warehouse_db()),
+        logger=app.logger
     )
 
     scheduler = BackgroundScheduler()

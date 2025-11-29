@@ -1,5 +1,10 @@
 # Проект 9-го спринта
 
+DDS_SERVICE: https://console.yandex.cloud/folders/b1gtj3ahqh8qomqiqal2/container-registry/registries/crpqcenorrrmvqsjd19f/overview/dds_service/image
+
+CDM_SERVICE: https://console.yandex.cloud/folders/b1gtj3ahqh8qomqiqal2/container-registry/registries/crpqcenorrrmvqsjd19f/overview/cdm_service/image
+
+
 ### Как работать с репозиторием
 1. В вашем GitHub-аккаунте автоматически создастся репозиторий `de-project-sprint-9` после того, как вы привяжете свой GitHub-аккаунт на Платформе.
 2. Скопируйте репозиторий на свой компьютер. В качестве пароля укажите ваш `Access Token`, который нужно получить на странице [Personal Access Tokens](https://github.com/settings/tokens)):
